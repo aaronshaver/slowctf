@@ -70,6 +70,13 @@ A web-based, turn-based strategy game with a CTF-like objective. The goal is to
 - Hosting: EC2 instance
 - Data Storage: In-memory structures only, no database
 
+## Deployment
+
+- Uses GitHub Actions to pull new code upon a branch push
+- Uses pm2 to manage the server to initiate a restart upon new code
+- appleboy/ssh-action@master for letting GitHub use SSH to get into the EC2 server (`pm2 restart your-app`)
+- GitHub Secrets for managing EC2_HOST, EC2_SSH_KEY (`Settings → Secrets and variables → Actions`)
+
 ## Disclosure
 
 - AI was used to help edit this document, though it did so badly. OpenAI's Canvas is a mess. It repeatedly failed to make edits correctly and had trouble understanding what I wanted.
