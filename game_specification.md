@@ -53,6 +53,8 @@ A web-based, turn-based strategy game with a CTF-like objective. The goal is to
   - Red and Blue team scores
   - Player leaderboard: shows how many points each player has scored for their team
   - Wall build points remaining for team
+  - Previous game Red and Blue team scores
+  - Previous game player leaderboard
 
 ## Screen Refresh & turn Processing
 
